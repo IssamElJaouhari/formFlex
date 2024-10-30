@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Glitch&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: "Oxanium", sans-serif;
+background-color: #133E87;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.contact{
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    /* border: 3px dotted red; */
+}
+.contact h2{
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    color: #133E87;
+    text-decoration: underline;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin-top: 18px;
+}
+
+.info{
+    min-width: 250px;
+    flex: 1;
+    margin-right: 20px;
+}
+/* to be contin..... */
+
+.contact-form{
+    flex:1;
+    min-width: 250px;
+    margin-left: 20px;
+}
+
+.contact-form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea
+{
+    /* border: 3px solid blue ; */
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #133E87;
+    margin-bottom: 10px;
+}
+
+.contact-form button{
+    padding: 13px 17px;
+    background-color:#133E87 ;
+    border: none;
+    color: #7ED4AD;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover{
+    background-color:#7ED4AD;
+    color: #133E87;
+}
+
+textarea{
+    resize: none;
+}
+
+
+@media (max-width:600px) {
+    .contact-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info, .contact-form{
+        margin: 0;
+        width: 100%;
+    }
+}
